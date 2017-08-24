@@ -93,31 +93,31 @@
                     });
 
                 });
-                (function() {
-                    function forceSafariPlayAudio() {
-                        audioEl.load();
-                        audioEl.play();
-                    }
-                    var audioEl = document.getElementById('main_audio');
-
-                    audioEl.addEventListener('loadstart', function() {
-                    }, false);
-                    audioEl.addEventListener('loadeddata', function() {
-                    }, false);
-                    audioEl.addEventListener('loadedmetadata', function() {
-                    }, false);
-                    audioEl.addEventListener('canplay', function() {
-                    }, false);
-                    audioEl.addEventListener('play', function() {
-                        window.removeEventListener('touchstart', forceSafariPlayAudio, false);
-                    }, false);
-                    audioEl.addEventListener('playing', function() {
-                    }, false);
-                    audioEl.addEventListener('pause', function() {
-                    }, false);
-                    window.addEventListener('touchstart', forceSafariPlayAudio, false);
-                    audioEl.src = "./mp3/birthday.mp3";
-                })();
+                // (function() {
+                //     function forceSafariPlayAudio() {
+                //         audioEl.load();
+                //         audioEl.play();
+                //     }
+                //     var audioEl = document.getElementById('main_audio');
+                //
+                //     audioEl.addEventListener('loadstart', function() {
+                //     }, false);
+                //     audioEl.addEventListener('loadeddata', function() {
+                //     }, false);
+                //     audioEl.addEventListener('loadedmetadata', function() {
+                //     }, false);
+                //     audioEl.addEventListener('canplay', function() {
+                //     }, false);
+                //     audioEl.addEventListener('play', function() {
+                //         window.removeEventListener('touchstart', forceSafariPlayAudio, false);
+                //     }, false);
+                //     audioEl.addEventListener('playing', function() {
+                //     }, false);
+                //     audioEl.addEventListener('pause', function() {
+                //     }, false);
+                //     window.addEventListener('touchstart', forceSafariPlayAudio, false);
+                //     audioEl.src = "./mp3/birthday.mp3";
+                // })();
             </script>
 
         </center>
