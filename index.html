@@ -8,9 +8,21 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/garden.js"></script>
     <script src="./js/functions.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+
+            </div>
+            <div class="col-md-12 col-lg-6">
+
+            </div>
+        </div>
+    </div>
 <div id="mainDiv">
     <div id="content">
         <div id="code">
@@ -19,10 +31,7 @@
             <span class="comments">愿您拥有365个美丽的日子，衷心地祝福你，生日快乐！</span><br/><br/>
             <span class="comments">在此诚挚地献上我的三个祝愿：</span><br/>
             <span class="comments">一愿你身体健康；二愿你幸福快乐；三愿你万事如意！</span><br/><br/>
-            <span class="comments">送你一个生日蛋糕，祝你生日快乐！</span><br/>
-            <span class="comments">第一层，体贴！第二层，关怀！</span><br/>
-            <span class="comments">第三层，浪漫！第四层，温馨！</span><br/>
-            <span class="comments">中间夹层，甜蜜！祝你天天都有一份好心情！</span><br/>
+
             <br><br>
             <span class="comments"><b class="bb">Your お兄ちゃん</b></span>
         </div>
@@ -38,6 +47,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div id="copyright">
         <center>
             <link rel="stylesheet" href="./css/cuplayer.css">
@@ -50,13 +63,8 @@
                 <a class="c-white fs-12 icon-play rotate" id="btn-play" href="javascript:void(0);"></a>
             </div>
             <script type="text/javascript">
-                //获取picid函数
+
                 $(function () {
-                    // $("area").click(function () {
-                    //     var picId = $(this).attr("data-id");
-                    //     var picSrc = "images/img_big/" + picId + ".jpg"
-                    //     $(".modal-content>.pic-box>img").attr("src", picSrc);
-                    // })
                     var isPlaying = function (audio) {
                         return !audio.paused;
                     }
